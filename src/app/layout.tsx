@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const dreamGlory = localFont({
-  src: "../fonts/fontDG.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+import SGMNavbar from "./components/SGMNavbar";
+import { Providers } from "./providers/Providers";
 
 export const metadata: Metadata = {
   title:
@@ -66,8 +61,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${dreamGlory.variable} antialiased`}>{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <body className={`antialiased`}>
+        <Providers>
+          <SGMNavbar />
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
