@@ -1,8 +1,14 @@
 import { MyLogo } from "./MyLogo";
 
+//Icons
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Link from "next/link";
+
 export const MyFooter = () => {
   return (
-    <footer className="h-3/5 w-full grid grid-rows-2 gap-8 md:grid-cols-3 p-8  md:p-20">
+    <footer className="w-full grid grid-rows-2 gap-8 md:grid-cols-3 p-8 md:p-8">
       <div className="row-span-2 flex items-center justify-center">
         <MyLogo className="" />
       </div>
@@ -40,15 +46,15 @@ export const MyFooter = () => {
       <div className="flex flex-col gap-2">
         <h3>Siguenos</h3>
         <div className="flex gap-4">
-          <a href="https://www.facebook.com/profile.php?id=100090155021614&mibextid=LQQJ4d">
-            <i className="bi bi-facebook text-3xl duration-300 hover:text-primary"></i>
-          </a>
-          <a href="https://www.instagram.com/s.g.m_sas?igsh=MXBiMW1rajFudnBtNg==">
-            <i className="bi bi-instagram text-3xl duration-300 hover:text-primary"></i>
-          </a>
-          <a href="https://co.linkedin.com/in/consultores-s-g-m-s-a-s-847160241">
-            <i className="bi bi-linkedin text-3xl duration-300 hover:text-primary"></i>
-          </a>
+          <Link href="https://www.facebook.com/profile.php?id=100090155021614&mibextid=LQQJ4d">
+            <FacebookIcon className="text-3xl" />
+          </Link>
+          <Link href="https://www.instagram.com/s.g.m_sas?igsh=MXBiMW1rajFudnBtNg==">
+            <InstagramIcon className="text-3xl" />
+          </Link>
+          <Link href="https://co.linkedin.com/in/consultores-s-g-m-s-a-s-847160241">
+            <LinkedInIcon className="text-3xl" />
+          </Link>
         </div>
       </div>
       <div className="">
@@ -58,7 +64,7 @@ export const MyFooter = () => {
           width="100%"
           height="100%"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           title="Mapa ubicacion SGM Consultores S.A.S Abogados"
         ></iframe>
       </div>
