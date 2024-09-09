@@ -13,6 +13,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryDark: "var(--color-primary-dark)", //Blue dark
+        primarylight: "var(--color-primary-light)", //Golden
+        secondaryDark: "var(--color-secondary-dark)", //Black
+        secondarylight: "var(--color-secondary-light)", //Gray
       },
     },
   },
@@ -27,12 +31,17 @@ const config: Config = {
       themes: {
         light: {
           layout: {}, // light theme layout tokens
-          colors: { background: "#eaeaea" }, // light theme colors
+          colors: {
+            background: "#eaeaea",
+            primary: "#ce9f44",
+          }, // light theme colors
         },
         dark: {
           layout: {}, // dark theme layout tokens
           colors: {
             background: "#222",
+            focus: "#ce9f44",
+            primary: "#121e41",
           }, // dark theme colors
         },
         // ... custom themes

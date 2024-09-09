@@ -1,3 +1,9 @@
+import AboutUs from "./components/home/AboutUs";
+
 export default function Home() {
-  return <></>;
+  return (
+    <main>
+      <AboutUs />
+    </main>
+  );
 }
