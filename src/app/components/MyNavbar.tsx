@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useContext } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -11,26 +10,11 @@ import {
   NavbarItem,
   Link,
 } from "@nextui-org/react";
-import Image from "next/image";
-import { ThemeContext } from "../providers/ThemeProvider";
+
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import { MyLogo } from "./MyLogo";
 
-export const AcmeLogo = () => {
-  const { logo } = useContext(ThemeContext);
-
-  return (
-    <Image
-      src={logo}
-      alt=""
-      fill={false}
-      height="36"
-      width="36"
-      priority={true}
-    />
-  );
-};
-
-export default function SGMNavbar() {
+export default function MyNavbar() {
   const menuItems = [
     {
       href: "/",
@@ -58,14 +42,14 @@ export default function SGMNavbar() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <AcmeLogo />
+          <MyLogo variant="simple" />
           <p className="font-bold text-inherit">S.G.M</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <AcmeLogo />
+          <MyLogo variant="simple" />
           <p className="font-bold text-inherit">S.G.M</p>
         </NavbarBrand>
 

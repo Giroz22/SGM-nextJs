@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SGMNavbar from "./components/SGMNavbar";
+import MyNavbar from "./components/MyNavbar";
 import { Providers } from "./providers/Providers";
+import { MyFooter } from "./components/MyFooter";
+import LayoutBasic from "./layoutBasic";
 
 export const metadata: Metadata = {
   title:
@@ -64,8 +66,11 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className={`antialiased`}>
         <Providers>
-          <SGMNavbar />
-          {children}
+          <LayoutBasic>
+            <MyNavbar />
+            {children}
+            <MyFooter />
+          </LayoutBasic>
         </Providers>
       </body>
     </html>
