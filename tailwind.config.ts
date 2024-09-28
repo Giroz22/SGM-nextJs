@@ -19,6 +19,10 @@ const config: Config = {
         secondarylight: "var(--color-secondary-light)", //Gray
       },
     },
+    fontFamily: {
+      title: "Main Font",
+      texts: "Open Sans", // Adds a new `font-display` class
+    },
   },
   darkMode: "class",
   plugins: [
@@ -32,16 +36,37 @@ const config: Config = {
         light: {
           layout: {}, // light theme layout tokens
           colors: {
-            background: "#eaeaea",
-            primary: "#ce9f44",
+            background: "#ffffff",
+            default: "#292526",
+            primary: {
+              DEFAULT: "#ce9f44",
+              foreground: "#eaeaea",
+            },
+            secondary: {
+              DEFAULT: "#121e41",
+              foreground: "#eaeaea",
+            },
+            // success: "",
+            // warning: "",
+            // danger: "",
           }, // light theme colors
         },
         dark: {
           layout: {}, // dark theme layout tokens
           colors: {
             background: "#222",
-            focus: "#ce9f44",
-            primary: "#121e41",
+            default: "#838b90",
+            primary: {
+              DEFAULT: "#ce9f44",
+              foreground: "#eaeaea",
+            },
+            secondary: {
+              DEFAULT: "#121e41",
+              foreground: "#eaeaea",
+            },
+            // success: "",
+            // warning: "",
+            // danger: "",
           }, // dark theme colors
         },
         // ... custom themes

@@ -9,4 +9,20 @@
     --color-secondary-dark: #292526;
     --color-secondary-light: #838b90;
   }
+  @font-face {
+    font-family: "Main Font";
+    src: url("/fonts/fontDG.woff") format("woff");
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Main Font", sans-serif;
+  color: var(--color-primary-light);
 }

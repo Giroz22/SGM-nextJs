@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Modal,
@@ -169,7 +171,7 @@ export default function FormContact() {
       <Button
         variant="ghost"
         color="primary"
-        className=""
+        className="font-bold"
         onPress={() => handleOpen("2xl", "opaque")}
       >
         Agenda tu asesoría gratis
@@ -229,7 +231,7 @@ export default function FormContact() {
             <Button color="danger" variant="light" onPress={onClose}>
               Close
             </Button>
-            <Button color="primary" onClick={handleSubmit}>
+            <Button color="primary" variant="light" onClick={handleSubmit}>
               Agendar
             </Button>
           </ModalFooter>
