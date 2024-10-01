@@ -4,14 +4,14 @@ import { MyLogo } from "../MyLogo";
 
 function MyHeader() {
   return (
-    <header className='relative min-h-screen w-full bg-[url("/imgs/background/header.jpg")] bg-cover bg-no-repeat bg-center flex justify-center items-center p-8 md:p-20'>
+    <header className="relative min-h-screen w-full bg-cover bg-no-repeat bg-center flex justify-center items-center p-8 md:p-20">
       <div className="relative w-full h-full flex flex-col items-center justify-center gap-8 md:gap-16 md:flex-row">
         <MyLogo className="" />
-        <div className="max-w-xl flex flex-col items-center gap-8 basis-3/5">
+        <div className="max-w-xl flex flex-col items-center gap-8 basis-3/5 bg-primaryDark rounded-xl px-6 py-16">
           <h1 className="text-2xl md:text-4xl text-center">
             Convertir desafíos en soluciones
           </h1>
-          <p className="text-lg text-justify font-texts">
+          <p className="text-lg text-justify text-white">
             Somos una empresa de consultores jurídicos que ofrece servicios
             legales y de asesoría a particulares y empresas.
             <span className="text-primarylight">

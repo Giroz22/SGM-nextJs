@@ -37,7 +37,11 @@ const config: Config = {
           layout: {}, // light theme layout tokens
           colors: {
             background: "#ffffff",
-            default: "#292526",
+            foreground: "#222",
+            default: {
+              DEFAULT: "#292526",
+              foreground: "#eaeaea",
+            },
             primary: {
               DEFAULT: "#ce9f44",
               foreground: "#eaeaea",
@@ -45,6 +49,9 @@ const config: Config = {
             secondary: {
               DEFAULT: "#121e41",
               foreground: "#eaeaea",
+            },
+            divider: {
+              DEFAULT: "#eaeaea",
             },
             // success: "",
             // warning: "",
@@ -55,7 +62,11 @@ const config: Config = {
           layout: {}, // dark theme layout tokens
           colors: {
             background: "#222",
-            default: "#838b90",
+            foreground: "#eaeaea",
+            default: {
+              DEFAULT: "#838b90",
+              foreground: "#121e41",
+            },
             primary: {
               DEFAULT: "#ce9f44",
               foreground: "#eaeaea",
@@ -63,6 +74,9 @@ const config: Config = {
             secondary: {
               DEFAULT: "#121e41",
               foreground: "#eaeaea",
+            },
+            divider: {
+              DEFAULT: "#222",
             },
             // success: "",
             // warning: "",

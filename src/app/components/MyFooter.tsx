@@ -47,13 +47,13 @@ export const MyFooter = () => {
         <h3>Siguenos</h3>
         <div className="flex gap-4">
           <Link href="https://www.facebook.com/profile.php?id=100090155021614&mibextid=LQQJ4d">
-            <FacebookIcon className="text-3xl" />
+            <FacebookIcon className="text-3xl hover:text-primarylight" />
           </Link>
           <Link href="https://www.instagram.com/s.g.m_sas?igsh=MXBiMW1rajFudnBtNg==">
-            <InstagramIcon className="text-3xl" />
+            <InstagramIcon className="text-3xl hover:text-primarylight" />
           </Link>
           <Link href="https://co.linkedin.com/in/consultores-s-g-m-s-a-s-847160241">
-            <LinkedInIcon className="text-3xl" />
+            <LinkedInIcon className="text-3xl hover:text-primarylight" />
           </Link>
         </div>
       </div>
