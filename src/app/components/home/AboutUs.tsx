@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 //Images
-import ImgLawyer from "@/imgs/pictures/Elisabeth-removebg.png";
+import ImgLawyer from "/public/imgs/pictures/Elisabeth-removebg.png";
 
 function AboutUs() {
   return (

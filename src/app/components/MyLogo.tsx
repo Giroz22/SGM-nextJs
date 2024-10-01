@@ -3,10 +3,10 @@
 import Image, { StaticImageData } from "next/image";
 
 //Logo
-import simpleLogoLight from "@/imgs/logos/simple-light-logo.png";
-import simpleLogoDark from "@/imgs/logos/simple-dark-logo.png";
-import logoLight from "@/imgs/logos/light-logo.png";
-import logoDark from "@/imgs/logos/dark-logo.png";
+import simpleLogoLight from "/public/imgs/logos/simple-light-logo.png";
+import simpleLogoDark from "/public/imgs/logos/simple-dark-logo.png";
+import logoLight from "/public/imgs/logos/light-logo.png";
+import logoDark from "/public/imgs/logos/dark-logo.png";
 
 import { useTheme } from "next-themes";
 
