@@ -5,7 +5,7 @@ import Information from "./components/Information";
 //Data
 import { about_SGM } from "@/../public/data/dataSGM";
 
-export default function page() {
+export default function AboutUs() {
   return (
     <>
       <HeaderDefault

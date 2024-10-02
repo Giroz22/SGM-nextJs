@@ -1,7 +1,7 @@
 import HeaderDefault from "../components/HeaderDefault";
 import ListService from "./components/ListService";
 
-export default function page() {
+export default function Services() {
   return (
     <>
       <HeaderDefault

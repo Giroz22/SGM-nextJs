@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "./imgs/logos/light-logo.png",
+        url: "/imgs/logos/light-logo.png",
         width: 1200,
         height: 630,
         alt: "SGM Consultores Indagine di Legge S.A.S.",
