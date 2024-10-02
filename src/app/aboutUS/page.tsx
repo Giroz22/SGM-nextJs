@@ -1,9 +1,9 @@
 import InfoLayers from "../components/InfoLayers";
-import HeaderDefault from "../components/HeaderDef";
+import HeaderDefault from "../components/HeaderDefault";
 import Information from "./components/Information";
 
 //Data
-import { about_SGM } from "../../../public/data/dataSGM";
+import { about_SGM } from "@/../public/data/dataSGM";
 
 export default function page() {
   return (

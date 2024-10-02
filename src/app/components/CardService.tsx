@@ -16,7 +16,7 @@ import {
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 
-export default function CardInfo({ props }) {
+export default function CardService({ props }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [size, setSize] = React.useState("3xl");
 

@@ -1,5 +1,14 @@
-import React from "react";
+import HeaderDefault from "../components/HeaderDefault";
+import ListService from "./components/ListService";
 
 export default function page() {
-  return <div>services</div>;
+  return (
+    <>
+      <HeaderDefault
+        title="Nuestros servicios"
+        urlImgBG="/imgs/background/header.jpg"
+      />
+      <ListService />
+    </>
+  );
 }

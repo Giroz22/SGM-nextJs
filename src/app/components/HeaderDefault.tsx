@@ -5,7 +5,7 @@ type headerProps = {
   urlImgBG: string;
 };
 
-export default function HeaderDef({ title, urlImgBG }: headerProps) {
+export default function HeaderDefault({ title, urlImgBG }: headerProps) {
   return (
     <header
       className={`p-16 relative before:inset-0 before:absolute before:backdrop-blur-sm z-10`}
