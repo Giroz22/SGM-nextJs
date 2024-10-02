@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect } from "react";
-import { detectUserTheme } from "./services/detectUserTheme";
+import { detectUserTheme } from "../services/detectUserTheme";
 
 export default function LayoutBasic({
   children,

@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Providers } from "../providers/Providers";
-import LayoutBasic from "./layoutBasic";
-import MyNavbar from "./components/MyNavbar";
-import { MyFooter } from "./components/MyFooter";
 
 export const metadata: Metadata = {
   title:
-    "SGM Consultores Indagine di Legge S.A.S. | Firma Legal Líder en Colombia - Derecho Laboral, Mercantil, Civil y Más",
+    "About SGM Consultores Indagine di Legge S.A.S. | Firma Legal Líder en Colombia - Derecho Laboral, Mercantil, Civil y Más",
   description:
     "SGM Consultores Indagine di Legge S.A.S., firma legal en Medellín, Colombia, fundada en 2022. Especializados en derecho procesal, laboral, mercantil, civil y más. Ofrecemos soluciones jurídicas eficaces y personalizadas con un enfoque en calidad, profesionalismo y compromiso social. Líderes en asesoría jurídica integral y conciliación.",
   keywords: [
@@ -64,15 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`antialiased`}>
-        <Providers>
-          <LayoutBasic>
-            <MyNavbar />
-            {children}
-            <MyFooter />
-          </LayoutBasic>
-        </Providers>
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

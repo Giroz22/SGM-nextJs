@@ -1,7 +1,7 @@
 "use client";
 
 import CardLawyer from "./CardLawyer";
-import { lawyers_SGM } from "@/data/dataSGM";
+import { lawyers_SGM } from "/public/data/dataSGM";
 import React from "react";
 
 function InfoLayers() {

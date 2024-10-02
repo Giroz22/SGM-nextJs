@@ -1,6 +1,6 @@
 import React from "react";
 import FormContact from "./FormContact";
-import { MyLogo } from "../MyLogo";
+import { MyLogo } from "../components/MyLogo";
 
 function MyHeader() {
   return (

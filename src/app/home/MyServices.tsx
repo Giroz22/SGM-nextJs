@@ -1,9 +1,9 @@
 //NextUI
 import { Link } from "@nextui-org/react";
 //Components
-import CardService from "../CardService";
+import CardService from "../components/CardService";
 //Data
-import { servicesSGM } from "@/data/dataSGM";
+import { servicesSGM } from "../../../public/data/dataSGM";
 import React from "react";
 
 function MyServices() {
