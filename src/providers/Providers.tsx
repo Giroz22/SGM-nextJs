@@ -8,7 +8,7 @@ import { GlobalProvider } from "./GlobalProvider";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      <NextThemesProvider attribute="class">
+      <NextThemesProvider attribute="class" enableSystem={true}>
         <GlobalProvider>{children}</GlobalProvider>
       </NextThemesProvider>
     </NextUIProvider>

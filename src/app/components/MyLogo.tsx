@@ -2,13 +2,14 @@
 
 import Image, { StaticImageData } from "next/image";
 
-//Logo
+// Logo
 import simpleLogoLight from "/public/imgs/logos/simple-light-logo.png";
 import simpleLogoDark from "/public/imgs/logos/simple-dark-logo.png";
 import logoLight from "/public/imgs/logos/light-logo.png";
 import logoDark from "/public/imgs/logos/dark-logo.png";
 
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 type logoTypes = {
   className?: string;
@@ -20,12 +21,11 @@ export const MyLogo = ({
   variant = "default",
 }: logoTypes) => {
   const { theme } = useTheme();
+  const [logo, setLogo] = useState<StaticImageData>(logoLight);
 
-  let logo: StaticImageData = logoDark;
-
-  if (variant === "default") logo = theme == "light" ? logoDark : logoLight;
-  if (variant === "simple")
-    logo = theme == "light" ? simpleLogoDark : simpleLogoLight;
+  useEffect(() => {
+    setLogo(getLogo(theme, variant));
+  }, [theme, variant]); // Solo se ejecuta cuando `theme` o `variant` cambian
 
   return (
     <Image
@@ -37,3 +37,19 @@ export const MyLogo = ({
     />
   );
 };
+
+function getLogo(theme: string | undefined, variant: string | undefined) {
+  let imgLogo: StaticImageData = simpleLogoDark;
+  const isLogoDark = theme === "light";
+
+  switch (variant) {
+    case "simple":
+      imgLogo = isLogoDark ? simpleLogoDark : simpleLogoLight;
+      break;
+    default:
+      imgLogo = isLogoDark ? logoDark : logoLight;
+      break;
+  }
+
+  return imgLogo;
+}
