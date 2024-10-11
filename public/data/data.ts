@@ -1,5 +1,5 @@
 //Types
-export type LawyersSGMType = {
+export type LawyersType = {
   name: string;
   position: string;
   email: string;
@@ -7,7 +7,7 @@ export type LawyersSGMType = {
   urlPicture: string;
 };
 
-export type AboutSGMtype = {
+export type AboutType = {
   about: Section;
   history: Section;
   mission: Section;
@@ -22,12 +22,12 @@ export type Section = {
   imgDescription: string;
 };
 
-export type FAQSGMType = {
+export type FAQType = {
   question: string;
   answer: string;
 };
 
-export type ServicesSGMType = {
+export type ServicesType = {
   urlImg: string;
   title: string;
   description: string;
@@ -35,7 +35,7 @@ export type ServicesSGMType = {
 };
 
 //Data
-export const lawyers_SGM: LawyersSGMType[] = [
+export const lawyersData: LawyersType[] = [
   {
     name: "Elisabeth Giraldo Marin",
     position: "Abogada y Gerente general",
@@ -73,7 +73,7 @@ export const lawyers_SGM: LawyersSGMType[] = [
   },
 ];
 
-export const about_SGM: AboutSGMtype = {
+export const aboutData: AboutType = {
   about: {
     title: "Sobre Nosotros",
     content:
@@ -112,7 +112,7 @@ export const about_SGM: AboutSGMtype = {
   },
 };
 
-export const servicesSGM: ServicesSGMType[] = [
+export const servicesData: ServicesType[] = [
   {
     urlImg: "/imgs/SGMServices/AsesoriaJuridica.jpg",
     title: "Asesorías jurídicas y contables",
@@ -222,7 +222,7 @@ export const servicesSGM: ServicesSGMType[] = [
   },
 ];
 
-export const FAQSGM: FAQSGMType[] = [
+export const FAQData: FAQType[] = [
   {
     question: "¿Cuáles son los servicios legales que ofrecen?",
     answer:

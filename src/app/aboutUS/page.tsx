@@ -3,7 +3,7 @@ import HeaderDefault from "../components/HeaderDefault";
 import Information from "./components/Information";
 
 //Data
-import { about_SGM } from "@/../public/data/dataSGM";
+import { aboutData } from "../../../public/data/data";
 
 export default function AboutUs() {
   return (
@@ -15,10 +15,10 @@ export default function AboutUs() {
       <main className="max-w-screen-xl py-8 m-auto">
         <InfoLayers />
         <div className="">
-          <Information {...about_SGM.history} LtoR={true} />
-          <Information {...about_SGM.mission} LtoR={false} />
-          <Information {...about_SGM.vision} LtoR={true} />
-          <Information {...about_SGM.values} LtoR={false} />
+          <Information {...aboutData.history} LtoR={true} />
+          <Information {...aboutData.mission} LtoR={false} />
+          <Information {...aboutData.vision} LtoR={true} />
+          <Information {...aboutData.values} LtoR={false} />
         </div>
       </main>
     </>
