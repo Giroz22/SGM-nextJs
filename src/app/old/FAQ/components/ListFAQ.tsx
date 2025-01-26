@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-// import { Accordion, AccordionItem } from "@nextui-org/react";
+// import { Accordion, AccordionItem } from "@heroui/react";
 
 //Import data
 import { FAQData } from "../../../../public/data/data";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function ListFAQ() {
   return (

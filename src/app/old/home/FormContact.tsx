@@ -11,7 +11,7 @@ import {
   useDisclosure,
   Input,
   Textarea,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 

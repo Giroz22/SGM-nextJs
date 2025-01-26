@@ -9,7 +9,7 @@ import {
   Link,
   Avatar,
   Chip,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 //Icons
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";

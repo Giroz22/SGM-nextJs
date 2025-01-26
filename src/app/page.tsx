@@ -1,17 +1,5 @@
-import AboutUs from "./home/AboutUs";
-import MyHeader from "./home/MyHeader";
-import MyServices from "./home/MyServices";
-import InfoLayers from "./components/InfoLayers";
+import HomePage from "./components/pages/HomePage";
 
 export default function Home() {
-  return (
-    <main>
-      <MyHeader />
-      <main>
-        <AboutUs />
-        <MyServices />
-        <InfoLayers />
-      </main>
-    </main>
-  );
+  return <HomePage />;
 }

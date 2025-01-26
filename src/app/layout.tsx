@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "../providers/Providers";
-import LayoutBasic from "./layoutBasic";
-import MyNavbar from "./components/MyNavbar";
-import { MyFooter } from "./components/MyFooter";
 
 export const metadata: Metadata = {
   title:
@@ -64,15 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`antialiased`}>
-        <Providers>
-          <LayoutBasic>
-            <MyNavbar />
-            {children}
-            <MyFooter />
-          </LayoutBasic>
-        </Providers>
-      </body>
+      <body className={`antialiased vsc-initialized`}>{children}</body>
     </html>
   );
 }

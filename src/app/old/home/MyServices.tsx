@@ -1,5 +1,5 @@
 //NextUI
-import { Link } from "@nextui-org/react";
+import { Link } from "@heroui/react";
 //Components
 import CardService from "../components/CardService";
 //Data

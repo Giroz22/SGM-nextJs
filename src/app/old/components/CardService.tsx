@@ -10,7 +10,7 @@ import {
   Button,
   useDisclosure,
   Image,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 //icons
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
