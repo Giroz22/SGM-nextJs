@@ -36,22 +36,14 @@ const config: Config = {
         light: {
           layout: {}, // light theme layout tokens
           colors: {
-            background: "#ffffff",
+            background: "#eaeaea",
             foreground: "#222",
-            default: {
-              DEFAULT: "#292526",
-              foreground: "#eaeaea",
-            },
             primary: {
               DEFAULT: "#ce9f44",
-              foreground: "#eaeaea",
             },
             secondary: {
               DEFAULT: "#121e41",
               foreground: "#eaeaea",
-            },
-            divider: {
-              DEFAULT: "#eaeaea",
             },
             // success: "",
             // warning: "",
