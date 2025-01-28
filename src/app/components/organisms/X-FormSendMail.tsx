@@ -1,10 +1,10 @@
 import React from "react";
-import AppFormSendMail from "../molecules/FormSendMail";
+import AppFormSendMail from "./FormSendMail";
 
 function AppXFormSendMail() {
   return (
-    <div className="flex flex-row h-[30vh] border-2 border-solid border-secondary">
-      <div className="bg-secondary w-3/12 h-full flex flex-col justify-center items-center">
+    <div className="flex flex-row min-h-[30vh] border-2 border-solid border-secondary">
+      <div className="bg-secondary w-3/12 min-h-full flex flex-col justify-center items-center">
         <h4 className="text-center text-2xl text-primary">
           Reserva tu consultoria{" "}
           <span className="font-bold">Totalmente Gratis</span>

@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import AppFormSendMail from "../molecules/FormSendMail";
+import AppFormSendMail from "./FormSendMail";
 import Image from "next/image";
 
 function AppYFormSendMail() {
@@ -9,10 +11,12 @@ function AppYFormSendMail() {
         <div className="w-1/2 h-full flex flex-col justify-center items-center">
           <div className="relative w-11/12 h-5/6">
             <Image
+              className="w-9/12 h-full object-cover"
               src="/imgs/pictures/EquipoReunion.jpeg"
               alt="Imagen abogados sgm"
               fill
-              className="w-9/12 h-full object-cover "
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
             />
             <div className="absolute bottom-0 left-0 w-full p-8">
               <div className="bg-white/90 flex flex-col justify-center items-center gap-4 py-4">
