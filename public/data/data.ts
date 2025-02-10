@@ -31,6 +31,7 @@ export type ServicesType = {
   urlImg: string;
   title: string;
   description: string;
+  summary: string;
   href: string;
 };
 
@@ -118,13 +119,17 @@ export const servicesData: ServicesType[] = [
     title: "Asesorías jurídicas y contables",
     description:
       "Asistencia que abarca desde la interpretación de leyes y regulaciones hasta la redacción de documentos legales, la representación en procedimientos legales y la resolución de conflictos legales.",
+    summary:
+      "¿Necesitas ayuda con leyes o documentos legales? Te asesoramos en todo, desde contratos hasta representación en juicios. ¡Tu tranquilidad es nuestra prioridad!",
     href: "/services",
   },
   {
     urlImg: "/imgs/SGMServices/DerechoPeticion.jpg",
     title: "Derechos de petición",
     description:
-      "Es un principio legal que garantiza a los individuos, grupos y organizaciones el derecho fundamental de dirigirse ante las autoridades públicas para solicitar información, presentar peticiones, quejas o reclamos, así como para obtener respuestas o soluciones a sus solicitudes. ",
+      "Es un principio legal que garantiza a los individuos, grupos y organizaciones el derecho fundamental de dirigirse ante las autoridades públicas para solicitar información, presentar peticiones, quejas o reclamos, así como para obtener respuestas o soluciones a sus solicitudes.",
+    summary:
+      "¿Quieres presentar una queja o solicitud ante una entidad pública? Te guiamos en el proceso para que obtengas respuestas claras y rápidas.",
     href: "/services",
   },
   {
@@ -132,6 +137,8 @@ export const servicesData: ServicesType[] = [
     title: "Acciones de tutela",
     description:
       "Mecanismo legal utilizado para proteger los derechos constitucionales fundamentales de las personas cuando estos son vulnerados o amenazados por actos u omisiones de autoridades públicas o particulares.",
+    summary:
+      "¿Tus derechos han sido vulnerados? Con las acciones de tutela, te ayudamos a proteger lo que es tuyo por ley. ¡Actuamos rápido!",
     href: "/services",
   },
   {
@@ -139,13 +146,17 @@ export const servicesData: ServicesType[] = [
     title: "Demandas",
     description:
       "Una demanda es un documento legal presentado ante un tribunal por una parte (demandante) contra otra parte (demandada), en el que se solicita una acción judicial para resolver un conflicto legal o reclamar un derecho.",
+    summary:
+      "¿Tienes un conflicto legal que resolver? Presentamos demandas para defender tus derechos y buscar soluciones justas.",
     href: "/services",
   },
   {
     urlImg: "/imgs/SGMServices/Movilidad.jpg",
-    title: "Trámites ante secretarias de tránsito a nivel nacional",
+    title: "Trámites ante secretarias de tránsito",
     description:
       "Procedimientos administrativos que los ciudadanos deben realizar para cumplir con las regulaciones y normativas relacionadas con el tránsito y la circulación vehicular.",
+    summary:
+      "¿Necesitas hacer trámites de tránsito? Te ayudamos con licencias, matrículas y más. ¡Simplificamos el proceso por ti!",
     href: "/services",
   },
   {
@@ -154,6 +165,8 @@ export const servicesData: ServicesType[] = [
     title: "Sucesiones",
     description:
       "Proceso legal mediante el cual se administra y distribuye el patrimonio de una persona fallecida (llamada causante) entre sus herederos legales o designados en su testamento, siguiendo las disposiciones legales y testamentarias aplicables.",
+    summary:
+      "¿Necesitas gestionar una herencia? Te acompañamos en el proceso de sucesión para que todo sea claro y justo.",
     href: "/services",
   },
   {
@@ -162,6 +175,8 @@ export const servicesData: ServicesType[] = [
     title: "Celebración y elaboración de contratos civiles y comerciales",
     description:
       "Actividades legales relacionadas con la redacción, negociación, firma y cumplimiento de contratos entre individuos, empresas u organizaciones, ya sea en el ámbito civil (por ejemplo, contratos de arrendamiento, compraventa) o en el ámbito comercial (por ejemplo, contratos de distribución, asociación).",
+    summary:
+      "¿Vas a firmar un contrato? Nos encargamos de redactarlo y revisarlo para proteger tus intereses. ¡Evita sorpresas!",
     href: "/services",
   },
   {
@@ -170,6 +185,8 @@ export const servicesData: ServicesType[] = [
     title: "Cobro jurídico de cartera",
     description:
       "Proceso legal que involucra la recuperación de deudas impagas mediante acciones legales, como el envío de cartas de requerimiento, el inicio de procesos judiciales o la ejecución de garantías, con el fin de asegurar el pago de la deuda adeudada.",
+    summary:
+      "¿Te deben dinero? Recuperamos tus deudas mediante acciones legales efectivas. ¡No dejes que te afecte económicamente!",
     href: "/services",
   },
   {
@@ -178,6 +195,8 @@ export const servicesData: ServicesType[] = [
     title: "Trámites pensionales",
     description:
       "Conjunto de procedimientos administrativos que deben seguirse para acceder a beneficios pensionales, tales como jubilación, pensión por invalidez o sobrevivientes, los cuales pueden variar según la legislación de cada país y el régimen pensional correspondiente.",
+    summary:
+      "¿Necesitas tramitar tu pensión? Te guiamos paso a paso para que obtengas tus beneficios sin complicaciones.",
     href: "/services",
   },
   {
@@ -186,6 +205,8 @@ export const servicesData: ServicesType[] = [
     title: "Rut y Cámara de Comercio",
     description:
       "El Registro Único Tributario (RUT) es un registro emitido por la autoridad tributaria de un país que identifica a las personas naturales o jurídicas que realizan actividades económicas y los inscribe en el sistema tributario. La Cámara de Comercio es una institución que promueve el desarrollo empresarial y económico, así como la formalización de empresas, mediante servicios como el registro mercantil, la expedición de certificados comerciales y la resolución de conflictos comerciales.",
+    summary:
+      "¿Necesitas registrar tu empresa o obtener tu RUT? Te ayudamos con todos los trámites para que tu negocio esté en regla.",
     href: "/services",
   },
   {
@@ -194,6 +215,8 @@ export const servicesData: ServicesType[] = [
     title: "Divorcios",
     description:
       "Proceso legal mediante el cual se disuelve el vínculo matrimonial entre dos personas casadas, poniendo fin a los derechos y obligaciones matrimoniales y regulando aspectos como la custodia de los hijos, la división de bienes y el pago de pensiones alimenticias.",
+    summary:
+      "¿Estás pasando por un divorcio? Te acompañamos en el proceso legal para que sea justo y sin complicaciones.",
     href: "/services",
   },
   {
@@ -202,6 +225,8 @@ export const servicesData: ServicesType[] = [
     title: "Liquidación de sociedad conyugal",
     description:
       "Proceso mediante el cual se determina y se reparte el patrimonio adquirido durante el matrimonio entre los cónyuges, una vez que se ha iniciado el proceso de divorcio o separación, teniendo en cuenta las normativas legales aplicables y los acuerdos alcanzados entre las partes.",
+    summary:
+      "¿Necesitas dividir los bienes tras un divorcio? Te ayudamos a hacerlo de manera justa y conforme a la ley.",
     href: "/services",
   },
   {
@@ -210,6 +235,8 @@ export const servicesData: ServicesType[] = [
     title: "Capitulaciones",
     description:
       "Acuerdo entre los futuros esposos que establece el régimen patrimonial que regirá su matrimonio, definiendo cómo se administrarán y distribuirán los bienes durante el matrimonio y en caso de divorcio o fallecimiento.",
+    summary:
+      "¿Vas a casarte? Te ayudamos a establecer acuerdos claros sobre los bienes para evitar problemas futuros.",
     href: "/services",
   },
   {
@@ -218,6 +245,8 @@ export const servicesData: ServicesType[] = [
     title: "Ley de insolvencia",
     description:
       "Conjunto de normas legales que regulan los procedimientos y mecanismos para manejar la insolvencia o quiebra de una persona natural o jurídica, buscando proteger los derechos de los acreedores y facilitar la reorganización o liquidación ordenada del deudor insolvente.",
+    summary:
+      "¿Tienes problemas financieros? Te asesoramos en procesos de insolvencia para proteger tus derechos y encontrar soluciones.",
     href: "/services",
   },
 ];
