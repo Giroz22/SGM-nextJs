@@ -1,5 +1,5 @@
 //Types
-export type LawyersType = {
+export type EmployeesType = {
   name: string;
   position: string;
   email: string;
@@ -36,7 +36,7 @@ export type ServicesType = {
 };
 
 //Data
-export const lawyersData: LawyersType[] = [
+export const employeesData: EmployeesType[] = [
   {
     name: "Elisabeth Giraldo Marin",
     position: "Abogada y Gerente general",
