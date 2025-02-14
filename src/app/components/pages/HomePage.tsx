@@ -1,10 +1,10 @@
 import React from "react";
-import { Footer } from "../organisms/Footer";
+import YFormSendMail from "../organisms/Y-FormSendMail";
 
 export default function HomePage() {
   return (
     <>
-      <Footer />
+      <YFormSendMail />
     </>
   );
 }

@@ -42,10 +42,10 @@ function AppFormSendMail({ className }: AppFormSendMailProps) {
   return (
     <Form
       onSubmit={handleSubmit}
-      className={`w-full h-full ${className}`}
+      className={`w-full h-full text-black flex gap-4 ${className}`}
       validationBehavior="native"
     >
-      <div className="w-3/5 flex flex-col gap-2">
+      <div className="w-full flex flex-col gap-4">
         <Input
           name="name"
           label="Nombre"
@@ -100,7 +100,7 @@ function AppFormSendMail({ className }: AppFormSendMailProps) {
         placeholder="En que te podemos ayudar?"
         type="textarea"
         minRows={7}
-        className="w-3/5"
+        className="w-full"
         onChange={handleChange}
         value={formData.message}
       />
