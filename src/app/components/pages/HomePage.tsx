@@ -1,10 +1,10 @@
 import React from "react";
-import YFormSendMail from "../organisms/Y-FormSendMail";
+import XFormSendMail from "../organisms/X-FormSendMail";
 
 export default function HomePage() {
   return (
     <>
-      <YFormSendMail />
+      <XFormSendMail />
     </>
   );
 }
