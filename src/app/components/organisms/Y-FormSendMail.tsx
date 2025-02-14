@@ -6,7 +6,10 @@ import Image from "next/image";
 
 function AppYFormSendMail() {
   return (
-    <div className="w-screen h-screen bg-[url(/imgs/background/header.jpg)] bg-cover">
+    <div
+      className="w-full h-screen bg-[url(/imgs/background/header.jpg)] bg-cover"
+      id="FormSendMail"
+    >
       <div className="w-full h-full bg-black/80 flex flex-row justify-center items-center">
         <div className="w-1/2 h-full flex flex-col justify-center items-center">
           <div className="relative w-11/12 h-5/6">

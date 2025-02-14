@@ -29,3 +29,7 @@ h3 {
   font-family: "Main Font", sans-serif;
   color: var(--color-primary-light);
 }
+
+html {
+  scroll-behavior: smooth;
+}
