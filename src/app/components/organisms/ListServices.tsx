@@ -3,7 +3,7 @@ import { servicesData } from "../../../../public/data/data";
 import { Link } from "@heroui/react";
 import AppModalService from "../molecules/ModalService";
 
-function AppListServices() {
+function ListServices() {
   return (
     <section className="bg-[url(/imgs/background/header.jpg)] md:bg-cover md:h-screen">
       <div className="w-full md:h-full bg-black/80 flex flex-col justify-center items-center md:py-8 md:px-20 p-4 gap-4 md:gap-8 md:justify-evenly">
@@ -28,4 +28,4 @@ function AppListServices() {
   );
 }
 
-export default AppListServices;
+export default ListServices;

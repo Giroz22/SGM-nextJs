@@ -8,19 +8,19 @@ import simpleLogoDark from "/public/imgs/logos/simple-dark-logo.png";
 import logoLight from "/public/imgs/logos/light-logo.png";
 import logoDark from "/public/imgs/logos/dark-logo.png";
 
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 type logoTypes = {
   className?: string;
   variant?: string;
+  theme?: string;
 };
 
 export const AppLogo = ({
   className = "w-8 h-8",
   variant = "default",
+  theme = "light",
 }: logoTypes) => {
-  const { theme } = useTheme();
   const [logo, setLogo] = useState<StaticImageData>(logoLight);
 
   useEffect(() => {

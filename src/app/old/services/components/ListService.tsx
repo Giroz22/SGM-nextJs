@@ -1,9 +1,8 @@
-import CardService from "@/app/components/CardService";
+import CardService from "../../components/CardService";
 
 //Data
-import { servicesData } from "../../../../public/data/data";
-
 import React from "react";
+import { servicesData } from "../../../../../public/data/data";
 
 export default function ListService() {
   return (
