@@ -13,8 +13,8 @@ export default function HomePage() {
     <>
       <AppNavbar />
       <AppSlider />
-      <Employees />
       <XFormSendMail />
+      <Employees />
       <ListServices />
       <YFormSendMail />
       <Questions />
