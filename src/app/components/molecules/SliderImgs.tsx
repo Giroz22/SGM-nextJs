@@ -8,7 +8,7 @@ import { supabase } from "@/app/utils/supabase/supabase";
 import Image from "next/image";
 import { useWindowSize } from "@/app/utils/useWindowSize";
 
-export default function AppSlider() {
+export default function SliderImgs() {
   const [images, setImages] = useState([]);
   const [baseUrl, setBaseUrl] = useState("");
 

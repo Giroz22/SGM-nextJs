@@ -25,8 +25,8 @@ function CardEmploy({
   };
 
   return (
-    <div className="flex flex-col gap-4 bg-transparent">
-      <div className="relative min-h-[350px] w-full flex items-center justify-center">
+    <div className="flex flex-col gap-4 bg-transparent h-[450px] md:w-[300px]">
+      <div className="relative h-full flex items-center justify-center">
         <Image
           className="object-cover object-top rounded-xl"
           src={urlPicture ? urlPicture : "/imgs/logos/simple-dark-logo.png"}
