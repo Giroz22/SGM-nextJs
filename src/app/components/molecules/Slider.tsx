@@ -33,8 +33,8 @@ export default function AppSlider() {
       const { data: url } = await supabase.storage
         .from("SGMPublic")
         .getPublicUrl(pathFolder);
-      setBaseUrl(url.publicUrl);
 
+      setBaseUrl(url.publicUrl);
       setImages(imgsfile);
     }
 
@@ -52,12 +52,10 @@ export default function AppSlider() {
     speed: 2000,
     autoplaySpeed: 5000,
   };
-  console.log(baseUrl);
-  console.log(pathFolder);
 
   if (!images || images.length === 0) {
     return (
-      <Slider {...settings}>
+      <Slider {...settings} className="h-screen md:h-[70vh]">
         {Array(2)
           .fill(0)
           .map((data, index) => (
@@ -79,7 +77,7 @@ export default function AppSlider() {
         {images?.map((image, index) => (
           <div key={index} className="relative w-screen h-screen md:h-[70vh]">
             <Image
-              src={baseUrl + image.name}
+              src={baseUrl + "/" + image.name}
               alt="Imagen presentacion SGM"
               fill
               style={{ objectFit: "cover" }}
