@@ -6,16 +6,20 @@ import Questions from "../organisms/Questions";
 import ListServices from "../organisms/ListServices";
 import SliderImgs from "../molecules/SliderImgs";
 import PageTemplate from "../template/PageTemplate";
+import RedirectForm from "../molecules/RedirectForm";
 
 export default function HomePage() {
   return (
     <PageTemplate>
       <SliderImgs />
       <XFormSendMail />
-      <ListServices />
-      <Employees />
-      <YFormSendMail />
+      <div className="flex flex-col gap-32 py-32">
+        <ListServices />
+        <Employees />
+        <YFormSendMail />
+      </div>
       <Questions />
+      <RedirectForm />
     </PageTemplate>
   );
 }

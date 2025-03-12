@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "slick-carousel/slick/slick-theme.css";
+@import "slick-carousel/slick/slick.css";
+
 @layer base {
   :root {
     --color-primary-dark: #121e41;
@@ -32,4 +35,10 @@ h3 {
 
 html {
   scroll-behavior: smooth;
+}
+
+.shadow-card-service:hover {
+  -webkit-box-shadow: inset 200px 0px 180px -200px rgba(206, 160, 68, 1);
+  -moz-box-shadow: inset 200px 0px 180px -200px rgba(206, 160, 68, 1);
+  box-shadow: inset 200px 0px 180px -200px rgba(206, 160, 68, 1);
 }

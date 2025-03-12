@@ -39,10 +39,10 @@ export default function AppNavbar() {
           <Link href="#">Sobre nosotros</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Servicios</Link>
+          <Link href="#services">Servicios</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">FAQ</Link>
+          <Link href="#FAQ">FAQ</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">

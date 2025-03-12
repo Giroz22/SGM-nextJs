@@ -39,7 +39,7 @@ function AppModalService(props: ServicesType) {
       <Card
         isPressable
         onPress={onOpen}
-        className="w-full h-auto bg-white/20 hover:bg-primary/70 md:h-full"
+        className="w-full h-auto bg-white/40 hover:bg-primary/70 md:h-full"
       >
         <CardHeader className="text-center h-14">
           <h4 className="w-full font-bold text-xl text-white">{props.title}</h4>
@@ -50,7 +50,13 @@ function AppModalService(props: ServicesType) {
           </p>
         </CardBody>
         <Divider />
-        <CardFooter className="flex items-center justify-end">
+        <CardFooter className="flex items-center justify-between">
+          <Image
+            src={props.icon}
+            alt={"Icono de " + props.title}
+            width={40}
+            height={40}
+          />
           <div className="text-white font-bold flex items-center gap-1">
             Saber mas <ArrowForwardIosIcon className="text-large font-bold" />
           </div>

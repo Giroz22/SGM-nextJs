@@ -44,7 +44,6 @@ export default function SliderImgs() {
   const settings = {
     dots: false,
     arrows: false,
-    lazyLoad: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -55,13 +54,32 @@ export default function SliderImgs() {
 
   if (!images || images.length === 0) {
     return (
-      <Slider {...settings} className="h-screen md:h-[70vh]">
-        {Array(2)
-          .fill(0)
-          .map((data, index) => (
-            <div key={index} className="relative w-screen h-[70vh]">
+      <div className="slider-container">
+        <Slider {...settings} className="h-screen md:h-[70vh]">
+          {Array(2)
+            .fill(0)
+            .map((data, index) => (
+              <div key={index} className="relative w-screen h-[70vh]">
+                <Image
+                  src="/imgs/background/LawyerPresentation.png"
+                  alt="Imagen presentacion SGM"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </div>
+            ))}
+        </Slider>
+      </div>
+    );
+  } else {
+    return (
+      <div className="slider-container h-screen md:h-[70vh]">
+        <Slider {...settings}>
+          {images?.map((image, index) => (
+            <div key={index} className="relative w-screen h-screen md:h-[70vh]">
               <Image
-                src="/imgs/background/LawyerPresentation.png"
+                src={baseUrl + "/" + image.name}
                 alt="Imagen presentacion SGM"
                 fill
                 style={{ objectFit: "cover" }}
@@ -69,23 +87,8 @@ export default function SliderImgs() {
               />
             </div>
           ))}
-      </Slider>
-    );
-  } else {
-    return (
-      <Slider {...settings} className="h-screen md:h-[70vh]">
-        {images?.map((image, index) => (
-          <div key={index} className="relative w-screen h-screen md:h-[70vh]">
-            <Image
-              src={baseUrl + "/" + image.name}
-              alt="Imagen presentacion SGM"
-              fill
-              style={{ objectFit: "cover" }}
-              priority
-            />
-          </div>
-        ))}
-      </Slider>
+        </Slider>
+      </div>
     );
   }
 }

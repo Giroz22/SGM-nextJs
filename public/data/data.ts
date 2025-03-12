@@ -33,6 +33,7 @@ export type ServicesType = {
   description: string;
   summary: string;
   href: string;
+  icon: string;
 };
 
 //Data
@@ -122,6 +123,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas ayuda con leyes o documentos legales? Te asesoramos en todo, desde contratos hasta representación en juicios. ¡Tu tranquilidad es nuestra prioridad!",
     href: "/services",
+    icon: "/imgs/icons/services/Asesoria-Juridica-Icon.png",
   },
   {
     urlImg: "/imgs/SGMServices/DerechoPeticion.jpg",
@@ -131,6 +133,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Quieres presentar una queja o solicitud ante una entidad pública? Te guiamos en el proceso para que obtengas respuestas claras y rápidas.",
     href: "/services",
+    icon: "/imgs/icons/services/derecho-de-peticion-icon.png",
   },
   {
     urlImg: "/imgs/SGMServices/AccionesTutela.jpg",
@@ -140,6 +143,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Tus derechos han sido vulnerados? Con las acciones de tutela, te ayudamos a proteger lo que es tuyo por ley. ¡Actuamos rápido!",
     href: "/services",
+    icon: "/imgs/icons/services/accion-de-tutela.png",
   },
   {
     urlImg: "/imgs/SGMServices/Demanda.jpg",
@@ -149,6 +153,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Tienes un conflicto legal que resolver? Presentamos demandas para defender tus derechos y buscar soluciones justas.",
     href: "/services",
+    icon: "/imgs/icons/services/demanda-icon.png",
   },
   {
     urlImg: "/imgs/SGMServices/Movilidad.jpg",
@@ -158,6 +163,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas hacer trámites de tránsito? Te ayudamos con licencias, matrículas y más. ¡Simplificamos el proceso por ti!",
     href: "/services",
+    icon: "/imgs/icons/services/secretaria-transito-icon.png",
   },
   {
     urlImg:
@@ -168,6 +174,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas gestionar una herencia? Te acompañamos en el proceso de sucesión para que todo sea claro y justo.",
     href: "/services",
+    icon: "/imgs/icons/services/sucesiones-icon.png",
   },
   {
     urlImg:
@@ -178,6 +185,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Vas a firmar un contrato? Nos encargamos de redactarlo y revisarlo para proteger tus intereses. ¡Evita sorpresas!",
     href: "/services",
+    icon: "/imgs/icons/services/contratos-icon.png",
   },
   {
     urlImg:
@@ -188,6 +196,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Te deben dinero? Recuperamos tus deudas mediante acciones legales efectivas. ¡No dejes que te afecte económicamente!",
     href: "/services",
+    icon: "/imgs/icons/services/cobro-cartera.png",
   },
   {
     urlImg:
@@ -198,6 +207,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas tramitar tu pensión? Te guiamos paso a paso para que obtengas tus beneficios sin complicaciones.",
     href: "/services",
+    icon: "/imgs/icons/services/tramites-personales-icon.png",
   },
   {
     urlImg:
@@ -208,6 +218,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas registrar tu empresa o obtener tu RUT? Te ayudamos con todos los trámites para que tu negocio esté en regla.",
     href: "/services",
+    icon: "/imgs/icons/services/runt-camara-comercio-icon.png",
   },
   {
     urlImg:
@@ -218,6 +229,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Estás pasando por un divorcio? Te acompañamos en el proceso legal para que sea justo y sin complicaciones.",
     href: "/services",
+    icon: "/imgs/icons/services/divorsio-icon.png",
   },
   {
     urlImg:
@@ -228,6 +240,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Necesitas dividir los bienes tras un divorcio? Te ayudamos a hacerlo de manera justa y conforme a la ley.",
     href: "/services",
+    icon: "/imgs/icons/services/liquidacion-sociedad-conyugal.png",
   },
   {
     urlImg:
@@ -238,6 +251,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Vas a casarte? Te ayudamos a establecer acuerdos claros sobre los bienes para evitar problemas futuros.",
     href: "/services",
+    icon: "/imgs/icons/services/capitulaciones-icon.png",
   },
   {
     urlImg:
@@ -248,6 +262,7 @@ export const servicesData: ServicesType[] = [
     summary:
       "¿Tienes problemas financieros? Te asesoramos en procesos de insolvencia para proteger tus derechos y encontrar soluciones.",
     href: "/services",
+    icon: "/imgs/icons/services/ley-insolvencia-icon.png",
   },
 ];
 
