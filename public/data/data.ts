@@ -36,6 +36,16 @@ export type ServicesType = {
   icon: string;
 };
 
+export type ImgType = {
+  src: string;
+  alt: string;
+};
+
+export type SliderImgsType = {
+  mobile: ImgType[];
+  desktop: ImgType[];
+};
+
 //Data
 export const employeesData: EmployeesType[] = [
   {
@@ -332,3 +342,14 @@ export const FAQData: FAQType[] = [
       "Nuestro equipo legal se mantiene constantemente actualizado sobre los cambios en la legislación y la jurisprudencia mediante la participación en programas de educación continua, la investigación activa y el seguimiento de desarrollos legales relevantes en nuestro campo de práctica. Esto nos permite brindarle asesoramiento legal sólido y actualizado.",
   },
 ];
+
+export const SliderImgsData: SliderImgsType = {
+  mobile: [
+    { src: "/imgs/sliderImgs/mobile/mobile1.jpg", alt: "imagenSlider" },
+    { src: "/imgs/sliderImgs/mobile/mobile2.jpg", alt: "imagenSlider" },
+  ],
+  desktop: [
+    { src: "/imgs/sliderImgs/desktop/desktop1.png", alt: "imagenSlider" },
+    { src: "/imgs/sliderImgs/desktop/desktop2.png", alt: "imagenSlider" },
+  ],
+};

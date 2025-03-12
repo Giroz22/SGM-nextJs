@@ -4,42 +4,20 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { supabase } from "@/app/utils/supabase/supabase";
 import Image from "next/image";
-import { useWindowSize } from "@/app/utils/useWindowSize";
+import getIMGSlider from "@/app/services/SliderHomeService";
 
 export default function SliderImgs() {
-  const [images, setImages] = useState([]);
-  const [baseUrl, setBaseUrl] = useState("");
-
-  //It get size of the window to know if it is mobile or desktop
-  const { width } = useWindowSize();
-  const isMobile = width < 768;
-  const pathFolder = isMobile
-    ? "images/slider/mobile"
-    : "images/slider/desktop";
+  const [images, setImages] = useState([{ src: "", alt: "" }]);
 
   useEffect(() => {
-    async function getTodos() {
-      const { data: imgsfile, error } = await supabase.storage
-        .from("SGMPublic")
-        .list(pathFolder);
-
-      if (error) {
-        console.log("error", error);
-        return [];
-      }
-
-      const { data: url } = await supabase.storage
-        .from("SGMPublic")
-        .getPublicUrl(pathFolder);
-
-      setBaseUrl(url.publicUrl);
-      setImages(imgsfile);
+    async function getImages() {
+      const images = getIMGSlider();
+      setImages(images);
     }
 
-    getTodos();
-  }, [pathFolder]);
+    getImages();
+  }, []);
 
   const settings = {
     dots: false,
@@ -79,8 +57,8 @@ export default function SliderImgs() {
           {images?.map((image, index) => (
             <div key={index} className="relative w-screen h-screen md:h-[70vh]">
               <Image
-                src={baseUrl + "/" + image.name}
-                alt="Imagen presentacion SGM"
+                src={image.src}
+                alt={image.alt}
                 fill
                 style={{ objectFit: "cover" }}
                 priority
