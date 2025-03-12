@@ -64,7 +64,7 @@ export const employeesData: EmployeesType[] = [
     position: "Auxiliar Administrativo",
     email: "sgmconsultoressas@gmail.com",
     whatsapp: "+57314 6849180",
-    urlPicture: "",
+    urlPicture: "/imgs/pictures/Juliana.jpeg",
   },
   {
     name: "Mateo Barrientos Giraldo",

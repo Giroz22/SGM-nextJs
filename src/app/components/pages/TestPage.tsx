@@ -1,10 +1,10 @@
 import React from "react";
-import ListServices from "../organisms/ListServices";
+import HomePage from "./HomePage";
 
 export default function TestPage() {
   return (
     <>
-      <ListServices />
+      <HomePage />
     </>
   );
 }

@@ -17,7 +17,11 @@ export default function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={true}>
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      isBlurred={true}
+      shouldHideOnScroll
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -36,7 +40,7 @@ export default function AppNavbar() {
           <Link href="#">Inicio</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#">Sobre nosotros</Link>
+          <Link href="#nosotros">Sobre nosotros</Link>
         </NavbarItem>
         <NavbarItem>
           <Link href="#services">Servicios</Link>

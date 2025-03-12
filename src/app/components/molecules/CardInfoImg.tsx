@@ -14,7 +14,7 @@ function CardInfoImg({ children, src, alt }: TypeCardInfoImg) {
         alt={alt}
         src={src}
         fill
-        className="invisible md:visible md:absolute md:object-cover"
+        className="invisible md:visible md:absolute md:object-cover md:object-right-bottom"
       />
       <div className="bg-white/80 flex flex-col justify-center items-center gap-4 p-4 text-black md:absolute md:bottom-6">
         {children}
